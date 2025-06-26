@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+
 --make database
 use alx_book_store;
 
