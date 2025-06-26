@@ -73,3 +73,8 @@ with open("task_4.sql", "w") as f:
         "WHERE TABLE_SCHEMA = 'alx_book_store'\n"
         "AND TABLE_NAME = 'Books';"
         )
+    
+with open("task_5.sql", "w") as file:
+    file.write("USE alx_book_store;\n"
+        "INSERT INTO Customers (customer_id, customer_name, email, address)\n"
+        "VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave');")
