@@ -1,20 +1,4 @@
-import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="firstsql")
-cursor = mydb.cursor()
-
-try:
-    cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
-    print("Database created successfully!")
-except mysql.connector.Error as e:
-    print("Error occurred while creating database", e)
-
-cursor.execute("USE alx_book_store")
-
-cursor.close()
-mydb.close()
-
-schema = """
 CREATE TABLE IF NOT EXIST Books (
     book_id PRIMARY KEY,
     title VARCHAR(130),
@@ -51,7 +35,3 @@ CREATE TABLE IF NOT EXIST Order_Details(
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE
 );
-"""
-
-with open("task_2.sql", "w") as file:
-    file.write(schema)
