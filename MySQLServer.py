@@ -56,12 +56,11 @@ CREATE TABLE IF NOT EXISTS Order_Details(
 with open("task_2.sql", "w") as file:
     file.write(schema)
 
-cursor.execute("SHOW TABLES")
-result = cursor.fetchall()
-result = "\n".join([f"Table: {table[0]}" for table in result])
+# cursor.execute("SHOW TABLES")
+# result = cursor.fetchall()
+# result = "\n".join([f"Table: {table[0]}" for table in result])
 
 
 
 with open("task_3.sql", "w") as f:
-    f.write(result)
-        
+    f.write("SHOW TABLES;")
