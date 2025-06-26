@@ -68,4 +68,8 @@ with open("task_3.sql", "w") as f:
 
 with open("task_4.sql", "w") as f:
     f.write("USE alx_book_store;\n"
-            "SHOW COLUMN FROM Books;")
+        "SELECT COLUMN_NAME, COLUMN_TYPE\n"
+        "FROM INFORMATION_SCHEMA.COLUMNS\n"
+        "WHERE TABLE_SCHEMA = 'alx_book_store'\n"
+        "AND TABLE_NAME = 'Books';"
+        )
