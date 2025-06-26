@@ -63,4 +63,9 @@ with open("task_2.sql", "w") as file:
 
 
 with open("task_3.sql", "w") as f:
-    f.write("SHOW TABLES;")
+    f.write("USE alx_book_store;\n"
+    " SHOW TABLES;")
+
+with open("task_4.sql", "w") as f:
+    f.write("USE alx_book_store;\n"
+            "SHOW COLUMN FROM Books;")
