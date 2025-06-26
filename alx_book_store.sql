@@ -15,7 +15,7 @@ CREATE TABLE Books (
 --create Authors table schema
 CREATE TABLE Authors (
     author_id PRIMARY KEY,
-    authot_name VARCHAR(215)
+    author_name VARCHAR(215)
 );
 
 --create Customers table schema
