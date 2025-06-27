@@ -78,3 +78,10 @@ with open("task_5.sql", "w") as file:
     file.write("USE alx_book_store;\n"
         "INSERT INTO customer (customer_id, customer_name, email, address)\n"
         "VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.');")
+    
+with open("task_6.sql", "w") as file:
+    file.write("USE alx_book_store;\n"
+        "INSERT INTO customer (customer_id, customer_name, email, address)\n"
+        "VALUES (2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness Ave.'),\n"
+                "(3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness Ave.'),\n"
+                "(4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.')")
